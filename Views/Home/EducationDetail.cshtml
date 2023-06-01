@@ -1,0 +1,15 @@
+﻿@model EntityLayerT.Concrete.Education
+@{
+    ViewData["Title"] = "EducationDetail";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>EducationDetail</h1>
+<h3>test alanı </h3>
+<form method="get">
+
+    @Html.TextBoxFor(x=>x.Degree)
+    <br />
+    @Html.TextBoxFor(x=>x.CityName)
+
+</form>

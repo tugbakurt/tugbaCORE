@@ -1,0 +1,84 @@
+﻿<footer>
+    <!-- footer -->
+    <section class="w3l-footer">
+        <div class="w3l-footer-16-main py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 column">
+                        <div class="row">
+                            <div class="col-md-4 column">
+                                <h3>Hakkında</h3>
+                                <ul class="footer-gd-16">
+                                    <li><a href="index.html">Topluluk Yönergeleri</a></li>
+                                    <li><a href="about.html">Gizlilik ve Koşullar</a></li>
+                                    <li><a href="services.html">Satış Çözümleri</a></li>
+                                    <li><a href="blog.html">Güvenlik Merkezi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 column mt-md-0 mt-4">
+                                <h3>Erişilebilirlik</h3>
+                                <ul class="footer-gd-16">
+                                    <li><a href="#url">Kariyer</a></li>
+                                    <li><a href="#url">Reklam Tercihleri</a></li>
+                                    <li><a href="#url">Mobil</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 column mt-md-0 mt-4">
+                                <h3>Yetenek Çözümleri</h3>
+                                <ul class="footer-gd-16">
+                                    <li><a href="#url">Pazarlama Çözümleri</a></li>
+                                    <li><a href="#url">Reklam</a></li>
+                                    <li><a href="services.html">Küçük İşletmeler</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+                    <div class="columns text-lg-left text-center">
+                        <p>
+                            &copy; @DateTime.Now.Year All rights reserved.Design by <a target="_blank">
+                                Tuğba KURT
+                            </a>
+                        </p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- //move top -->
+        <script>
+            $(function () {
+                $('.navbar-toggler').click(function () {
+                    $('body').toggleClass('noscroll');
+                })
+            });
+        </script>
+    </section>
+    <!-- //footer -->
+</footer>

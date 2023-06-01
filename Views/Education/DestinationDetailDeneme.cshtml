@@ -1,0 +1,19 @@
+﻿@using EntityLayerT.Concrete;
+@model List<Education>
+
+@{
+    ViewData["Title"] = "DestinationDetailDeneme";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+<h1>DestinationDetailDeneme</h1>
+  @foreach (var item in Model)
+{
+<div class="col-log-4 col-md-4 col-6">
+    <div class="column">
+        <a href="Education/EducationDetail/@item.Degree ">mezuniyet:</a>
+        <br>
+        <a href="Education/EducationDetail/@item.CityName ">ŞEhir isimleri:</a>
+    </div>
+</div>
+    
+}
